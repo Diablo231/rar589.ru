@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "Bebas Neue Cyrillic";
+  src: url("Bebas Neue Cyrillic.ttf") format("truetype"); /* формат TTF */
+}
+
+@font-face {
+  font-family: "OpenSans-Italic-VariableFont_wdth,wght";
+  src: url("OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype"); /* формат TTF */
+}
+
+@font-face {
+  font-family: "OpenSans-VariableFont_wdth,wght";
+  src: url("OpenSans-VariableFont_wdth,wght.ttf") format("truetype"); /* формат TTF */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("fon.png");
+}
+/*фото усмений*/
+
+.m img {
+  width: 100%; /* Ширина 100% от родительского элемента */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  transform: scale(0.66); /* Уменьшение размера в 3 раза */
+  margin-top: -535px;
+  margin-left: 300px;
+}
+
+/* Заголовок */
+.rectangle {
+  width: 250px; /* Ширина прямоугольника */
+  height: 20px; /* Высота прямоугольника */
+  background-color: #7d8d59; /* Цвет прямоугольника */
+  position: absolute;
+  margin: 0 auto 10px; /* Центрирование и отступ снизу */
+  margin-left: 60px;
+}
+
+.rectangle1 {
+  width: 390px;
+  height: 4px;
+  background-color: #497f03;
+  position: absolute;
+  margin: 0 auto 10px;
+  margin-left: 110px;
+  margin-top: -20px; /* Пример отступа сверху */
+}
+
+header {
+  text-align: left;
+  padding: 199px; /* Отступы сверху и по бокам */
+  max-width: 1200px;
+  margin-left: -151px; /* Центрируем содержимое */
+  margin-top: -40px;
+  box-sizing: border-box; /* Учитываем паддинги в ширине элемента */
+  font-family: "Bebas Neue Cyrillic.ttf", sans-serif;
+}
+
+header h1 {
+  font-size: 64px; /* Размер шрифта для заголовка */
+  color: rgb(0, 0, 0); /* Цвет текста заголовка */
+  margin-bottom: 20px; /* Отступ снизу */
+  margin-left: 56px;
+  z-index: 10000;
+}
+
+/* Навигационное меню */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Раздвигаем элементы по краям */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff; /* Фон навигационного меню */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тонкая тень */
+  font-size: 26px;
+  font-family: "OpenSans-VariableFont_wdth,wght.ttf", sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo img {
+  height: 45px; /* adjust as needed */
+  margin-left: 89px;
+}
+
+.logo span {
+  color: rgb(0, 0, 0); /* цвет текста */
+  font-size: 36px; /* размер шрифта */
+  font-weight: bold; /* жирный шрифт */
+  margin-left: 10px;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* Расстояние между пунктами меню */
+  font-size: 18px;
+  margin-right: 700px;
+}
+
+.nav-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none; /* Убираем подчеркивание для ссылок */
+  transition: transform 0.2s ease; /* Добавляем плавное переходное состояние */
+}
+
+.nav-menu a:hover {
+  transform: scale(1.05); /* Увеличиваем масштаб при наведении */
+}
+
+/* Стиль для колонтитула */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #232323; /* Черный цвет фона */
+  color: #fff; /* Белый цвет текста */
+  text-align: center;
+  padding: 100px 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Тонкая тень сверху */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 18px;
+  font-family: "OpenSans-VariableFont_wdth,wght", sans-serif;
+  line-height: 1.6;
+  text-align: left;
+  margin-left: 110px;
+  margin-top: 20px; /* Пример отступа сверху */
+}
+
+.footer h1 {
+  font-size: 44px;
+  text-align: left;
+  margin-left: 110px;
+  font-family: "OpenSans-VariableFont_wdth,wght", sans-serif;
+}
+
+/*Медиа запросы*/
+@media screen and (min-width: 1336px) {
+  header h1 {
+    font-size: 64px;
+  }
+  .footer p {
+    font-size: 18px;
+  }
+  .footer h1 {
+    font-size: 64px;
+    line-height: 2;
+  }
+  .m img {
+    margin-left: 220px;
+    margin-top: -450px;
+  }
+}
+
+@media screen and (min-width: 1336px) and (max-width: 1920px) {
+  .nav-menu {
+    margin-left: 300px;
+  }
+  header h1 {
+    font-size: 44px;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+  .footer h1 {
+    font-size: 34px;
+    line-height: 2;
+  }
+  .m img {
+    margin-left: 220px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1335px) {
+  .nav-menu {
+    margin-left: 200px;
+  }
+  header h1 {
+    font-size: 44px;
+  }
+  .footer p {
+    font-size: 12px;
+    margin-left: 67px;
+  }
+  .footer h1 {
+    font-size: 24px;
+    line-height: 3;
+    margin-top: -20px;
+    margin-left: 67px;
+  }
+  .footer {
+    padding: 40px;
+  }
+  .m img {
+    margin-left: 20px;
+    margin-top: -250px;
+    transform: scale(0.76); /* Уменьшение размера в 3 раза */
+  }
+  .rectangle1 {
+    margin-left: 67px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-menu {
+    margin-left: 80px;
+  }
+  header h1 {
+    font-size: 44px;
+    margin-top: 30px;
+  }
+  .footer p {
+    font-size: 9px;
+    margin-left: 67px;
+  }
+  .footer h1 {
+    font-size: 24px;
+    line-height: 3;
+    margin-top: -20px;
+    margin-left: 67px;
+  }
+  .footer {
+    padding: 40px;
+  }
+  .m img {
+    margin-left: 20px;
+    margin-top: -200px;
+    transform: scale(0.86); /* Уменьшение размера в 3 раза */
+  }
+  .rectangle1 {
+    margin-left: 67px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .rectangle {
+    width: 250px; /* Ширина прямоугольника */
+    height: 20px; /* Высота прямоугольника */
+    background-color: #7d8d59; /* Цвет прямоугольника */
+    position: absolute;
+    margin: 0 auto 10px; /* Центрирование и отступ снизу */
+    margin-left: 10px;
+    margin-top: -40px;
+  }
+
+  .logo span {
+    color: rgb(255, 255, 255); /* цвет текста */
+    font-size: 26px; /* размер шрифта */
+    font-weight: bold; /* жирный шрифт */
+    margin-left: 10px;
+  }
+
+  .logo img {
+    height: 25px; /* adjust as needed */
+    margin-left: 89px;
+    display: none;
+  }
+  .nav-menu {
+    margin-left: -50px;
+    font-size: 12px;
+  }
+  header h1 {
+    font-size: 24px;
+    margin-top: -15px;
+    margin-left: 10px;
+  }
+  .footer p {
+    font-size: 5px;
+    display: none;
+    hyphens: auto;
+    word-wrap: break-word;
+  }
+  .footer h1 {
+    font-size: 14px;
+    line-height: 4;
+    margin-top: -20px;
+    margin-left: 7px;
+  }
+  .footer {
+    padding: 50px;
+  }
+  .m img {
+    margin-left: 10px;
+    margin-top: -200px;
+    transform: scale(0.86); /* Уменьшение размера в 3 раза */
+  }
+  .rectangle1 {
+    margin-left: 25px;
+    width: 190px;
+    height: 4px;
+  }
+}
