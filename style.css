@@ -371,17 +371,18 @@ nav {
     margin-left: 80px;
   }
   header h1 {
-    font-size: 39px;
-    margin-top: -1650px;
+    font-size: 20px;
+    margin-top: -1050px;
     position: fixed;
     z-index: -10; 
+    margin-left: 20px;
   }
   .footer p {
-    font-size: 10px;
+    font-size: 5px;
     margin-left: 10px;
   }
   .footer h1 {
-    font-size: 24px;
+    font-size: 12px;
     line-height: 3;
     margin-top: -20px;
     margin-left: 10px;
@@ -397,16 +398,20 @@ nav {
   }
   .rectangle1 {
     margin-left: 10px;
+    margin-top: -8px;
+    width: 200px;
   }
   .nav-menu {
     right: 100px;
+    font-size: 11px;
+    right: 10px;
   }
   .p img {
     display: flex;
     width: 70%; /* Или любой другой размер, который вам нужен */
     height: auto; /* Сохранение пропорций */
     z-index: -1; 
-    margin-left: 100px;
+    margin-left: 60px;
     margin-top: 300px;
   }
   body {
