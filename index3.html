@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Video Editor</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#home"><img src="logo.jpg" alt="JAR" /></a>
+        <span>JAR</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Index3.html">Portfolio</a></li>
+        <li><a href="index2.html" target="_blank">Reviews</a></li>
+        <li><a href="index4.html" target="_blank">My soft</a></li>
+        <li class="highlight"><a href="https://t.me/rar589" target="_blank">Order</a></li>
+      </ul>
+    </nav>
+    <div class="card-container">
+        <a href="https://www.adobe.com/ru/" class="card">
+            <img src="adobe-audition_5968442.png" alt="Картинка 1">
+            <div class="card-content">
+                <h3>Adobe Audition</h3>
+                <p></p>
+            </div>
+        </a>
+        <a href="https://www.adobe.com/ru/" class="card">
+            <img src="after-effects_5968428.png" alt="Картинка 2">
+            <div class="card-content">
+                <h3>Adobe After Effects</h3>
+                <p></p>
+            </div>
+        </a>
+        <a href="https://www.adobe.com/ru/" class="card">
+            <img src="premiere-pro_5968525.png" alt="Картинка 3">
+            <div class="card-content">
+                <h3>Adobe Premiere Pro</h3>
+                <p></p>
+            </div>
+        </a>
+        <a href="https://www.adobe.com/ru/" class="card">
+            <img src="photoshop_5968520.png" alt="Картинка 4">
+            <div class="card-content">
+                <h3>Adobe Photoshop</h3>
+                <p></p>
+            </div>
+        </a>
+    </div>
+</body>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+    .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    padding: 20px;
+    box-sizing: border-box;
+}
+    .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    height: 260px;
+    width: 230px;
+    position: relative;
+}
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .card img {
+        margin-left: -10px;
+        width: 108%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .card-content {
+        padding: 20px;
+    }
+    .card-content h3 {
+        margin: 0 0 10px;
+    }
+    .card-content p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+    .card {
+        height: auto;
+    }
+    .card img {
+        height: auto;
+        max-height: 200px; /* Максимальная высота изображения */
+    }
+}
+</style>

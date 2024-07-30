@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Video Editor</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 110vh;
+        background: #f0f0f0; /* Фоновый цвет страницы (опционально) */
+      }
+
+      .video-wrapper {
+        width: calc(100% - 80px); /* Ширина с учетом отступов по бокам (20px с каждой стороны) */
+        max-width: 960px; /* Максимальная ширина контейнера */
+        margin: 0 auto; /* Центрирование блока по горизонтали */
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* Соотношение сторон 16:9 */
+        height: 0;
+        overflow: hidden;
+        border-radius: 12px; /* Закругление углов */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+        border: 2px solid #ddd; /* Обводка (опционально) */
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      @media (max-width: 768px) {
+        .video-wrapper {
+          width: calc(100% - 20px); /* Уменьшение отступов на меньших экранах */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#home"><img src="logo.jpg" alt="JAR" /></a>
+        <span>JAR</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Index3.html">Portfolio</a></li>
+        <li><a href="index2.html" target="_blank">Reviews</a></li>
+        <li><a href="index4.html" target="_blank">My soft</a></li>
+        <li class="highlight"><a href="https://t.me/rar589" target="_blank">Order</a></li>
+      </ul>
+    </nav>
+    <div class="video-wrapper">
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/06HODIm9R3I"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>

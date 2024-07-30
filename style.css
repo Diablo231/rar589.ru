@@ -1,0 +1,416 @@
+@font-face {
+  font-family: "Bebas Neue Cyrillic";
+  src: url("Bebas Neue Cyrillic.ttf") format("truetype"); /* формат TTF */
+}
+
+@font-face {
+  font-family: "OpenSans-Italic-VariableFont_wdth,wght";
+  src: url("OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype"); /* формат TTF */
+}
+
+@font-face {
+  font-family: "OpenSans-VariableFont_wdth,wght";
+  src: url("OpenSans-VariableFont_wdth,wght.ttf") format("truetype"); /* формат TTF */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("fon.png");
+}
+/*фото усмений*/
+
+.m img {
+  width: 90%; /* Ширина 100% от родительского элемента */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  transform: scale(0.66); /* Уменьшение размера в 3 раза */
+  margin-top: -490px;
+  margin-left: 430px;
+}
+
+/* Заголовок */
+.rectangle {
+  width: 250px; /* Ширина прямоугольника */
+  height: 20px; /* Высота прямоугольника */
+  background-color: #7d8d59; /* Цвет прямоугольника */
+  position: absolute;
+  margin: 0 auto 10px; /* Центрирование и отступ снизу */
+  margin-left: 60px;
+}
+
+.rectangle1 {
+  width: 390px;
+  height: 4px;
+  background-color: #497f03;
+  position: absolute;
+  margin: 0 auto 10px;
+  margin-left: 110px;
+  margin-top: -20px; /* Пример отступа сверху */
+}
+
+header {
+  text-align: left;
+  padding: 199px; /* Отступы сверху и по бокам */
+  max-width: 1200px;
+  margin-left: -151px; /* Центрируем содержимое */
+  margin-top: -40px;
+  box-sizing: border-box; /* Учитываем паддинги в ширине элемента */
+  font-family: "Bebas Neue Cyrillic.ttf", sans-serif;
+}
+
+header h1 {
+  font-size: 64px; /* Размер шрифта для заголовка */
+  color: rgb(0, 0, 0); /* Цвет текста заголовка */
+  margin-bottom: 20px; /* Отступ снизу */
+  margin-left: 56px;
+  z-index: 10000;
+}
+
+/* Навигационное меню */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Раздвигаем элементы по краям */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff; /* Фон навигационного меню */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тонкая тень */
+  font-size: 26px;
+  font-family: "OpenSans-VariableFont_wdth,wght.ttf", sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo img {
+  height: 45px; /* adjust as needed */
+  margin-left: 89px;
+}
+
+.logo span {
+  color: rgb(0, 0, 0); /* цвет текста */
+  font-size: 36px; /* размер шрифта */
+  font-weight: bold; /* жирный шрифт */
+  margin-left: 10px;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* Расстояние между пунктами меню */
+  font-size: 18px;
+  position: fixed; /* Фиксируем меню */
+  right: 600px; /* Положение справа */
+  right: 600px;
+}
+
+.nav-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none; /* Убираем подчеркивание для ссылок */
+  transition: transform 0.2s ease; /* Добавляем плавное переходное состояние */
+}
+
+.nav-menu a:hover {
+  transform: scale(1.05); /* Увеличиваем масштаб при наведении */
+}
+.highlight {
+  background-color: #798e4b; /* Зеленый цвет */
+  border-radius: 10px; /* Скругление углов */
+  width: 65px; /* Увеличиваем ширину */
+  height: 25px; /* Увеличиваем высоту */
+  padding: 20px; /* Внутренние отступы */
+  display: flex; /* Используем flexbox для выравнивания текста по центру */
+  align-items: center; /* Центрирование по вертикали */
+  justify-content: center; /* Центрирование по горизонтали */
+  margin-left: auto; /* Сдвигаем элемент максимально вправо */
+  text-align: center;
+}
+
+.highlight a {
+  color: white; /* Цвет текста */
+  text-decoration: none; /* Убирает подчеркивание */
+}
+
+/* Стиль для колонтитула */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #232323; /* Черный цвет фона */
+  color: #fff; /* Белый цвет текста */
+  text-align: center;
+  padding: 100px 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Тонкая тень сверху */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 18px;
+  font-family: "OpenSans-VariableFont_wdth,wght", sans-serif;
+  line-height: 1.6;
+  text-align: left;
+  margin-left: 110px;
+  margin-top: 20px; /* Пример отступа сверху */
+}
+
+.footer h1 {
+  font-size: 44px;
+  text-align: left;
+  margin-left: 110px;
+  font-family: "OpenSans-VariableFont_wdth,wght", sans-serif;
+}
+/*Картинки*/
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Скрываем слайдер по умолчанию */
+.slider {
+  display: none;
+}
+
+/* Стили для простой картинки */
+.simple-image {
+  width: 100%;
+  height: auto;
+}
+
+
+/*Картинка для телефона*/
+.p img {
+  display: none;
+}
+/*Медиа запросы*/
+
+
+
+@media screen and (min-width: 1490px) and (max-width: 1640px) {
+  header h1 {
+    font-size: 64px;
+  }
+  .footer p {
+    font-size: 18px;
+  }
+  .footer h1 {
+    font-size: 34px;
+    line-height: 2;
+  }
+  .m img {
+    margin-left: -30px !important;
+    margin-top: -300px !important;
+    width: 108% !important;
+    height: auto !important;
+  }
+  .nav-menu {
+    right: 50px;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #232323; /* Черный цвет фона */
+    color: #fff; /* Белый цвет текста */
+    text-align: center;
+    padding: 70px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Тонкая тень сверху */
+  }
+
+}
+
+@media screen and (min-width: 1337px) and (max-width: 1475px) {
+  header h1 {
+    font-size: 64px;
+  }
+  .footer p {
+    font-size: 18px;
+  }
+  .footer h1 {
+    font-size: 34px;
+    line-height: 2;
+  }
+  .m img {
+    margin-left: -120px !important;
+    margin-top: -300px !important;
+    width: 115% !important;
+    height: auto !important;
+  }
+  .nav-menu {
+    right: 50px;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #232323; /* Черный цвет фона */
+    color: #fff; /* Белый цвет текста */
+    text-align: center;
+    padding: 70px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Тонкая тень сверху */
+  }
+
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1336px) {
+  .nav-menu {
+    margin-left: 300px;
+  }
+  header h1 {
+    font-size: 44px;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+  .footer h1 {
+    font-size: 34px;
+    line-height: 2;
+  }
+  .m img {
+    margin-left: -230px !important;
+    margin-top: -260px !important;
+    width: 135% !important;
+    height: auto !important;
+  }
+  .nav-menu {
+    right: 50px;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #232323; /* Черный цвет фона */
+    color: #fff; /* Белый цвет текста */
+    text-align: center;
+    padding: 70px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Тонкая тень сверху */
+  }
+}
+
+
+@media screen and (min-width: 840px) and (max-width: 1024px) {
+  .nav-menu {
+    margin-left: 80px;
+  }
+  header h1 {
+    font-size: 44px;
+    margin-top: -2100px;
+  }
+  .footer p {
+    font-size: 13px;
+    margin-left: 37px;
+  }
+  .footer h1 {
+    font-size: 34px;
+    line-height: 3;
+    margin-top: -20px;
+    margin-left: 37px;
+  }
+  .footer {
+    padding: 40px;
+  }
+  .m img {
+    margin-left: 20px;
+    margin-top: -200px;
+    transform: scale(0.86); /* Уменьшение размера в 3 раза */
+    display: none;
+  }
+  .rectangle1 {
+    margin-left: 37px;
+  }
+  .nav-menu {
+    right: 100px;
+  }
+  .p img {
+    display: flex;
+    width: 70%; /* Или любой другой размер, который вам нужен */
+    height: auto; /* Сохранение пропорций */
+    z-index: -1; 
+    margin-left: 130px;
+    margin-top: 320px;
+  }
+  body {
+    overflow: auto; /* или overflow: scroll; */
+  }
+  
+}
+
+@media screen and (min-width: 360px) and (max-width: 839px) {
+  .nav-menu {
+    right: 100px;
+    position: fixed;
+    font-size: 15px;
+  }
+  .logo span {
+   opacity: 0%;   
+  }
+  .logo img {
+    display: none;
+  }
+  .nav-menu {
+    margin-left: 80px;
+  }
+  header h1 {
+    font-size: 39px;
+    margin-top: -1650px;
+    position: fixed;
+    z-index: -10; 
+  }
+  .footer p {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .footer h1 {
+    font-size: 24px;
+    line-height: 3;
+    margin-top: -20px;
+    margin-left: 10px;
+  }
+  .footer {
+    padding: 40px;
+  }
+  .m img {
+    margin-left: 20px;
+    margin-top: -200px;
+    transform: scale(0.86); /* Уменьшение размера в 3 раза */
+    display: none;
+  }
+  .rectangle1 {
+    margin-left: 10px;
+  }
+  .nav-menu {
+    right: 100px;
+  }
+  .p img {
+    display: flex;
+    width: 70%; /* Или любой другой размер, который вам нужен */
+    height: auto; /* Сохранение пропорций */
+    z-index: -1; 
+    margin-left: 100px;
+    margin-top: 300px;
+  }
+  body {
+    overflow: auto; /* или overflow: scroll; */
+  }
+  
+}

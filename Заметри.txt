@@ -1,0 +1,57 @@
+/*Канртинка*/
+.container {
+    position: fixed;
+    bottom: -40px; /* отступ от нижнего края */
+    left: 0px; /* отступ от левого края */
+}
+
+.container img {
+    width: 900px; /* ширина картинки, укажите подходящее значение */
+    height: auto; /* автоматически подстраивает высоту под ширину */
+}
+
+
+
+    <div class="container">
+        <img src="img.png" alt="Картинка">
+    </div>
+
+
+Post-Production
+Editor
+Привет! Я профессиональный монтажер с большим опытом работы, 
+специализирующийся на создании качественного видеоконтента. 
+Моя работа требует внимательности к деталям, 
+креативного подхода и технических навыков для создания высококачественного продукта. 
+Я обладаю всеми необходимыми навыками, 
+чтобы соответствовать высоким стандартам индустрии.
+
+
+
+nav {
+    position: fixed;
+    width: 90%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Раздвигаем элементы по краям */
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 26px;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тонкая тень */
+    font-size: 26px;
+    font-family: 'OpenSans-Italic-VariableFont_wdth,wght.ttf', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+    
