@@ -177,23 +177,6 @@ nav {
   margin-left: 110px;
   font-family: "OpenSans-VariableFont_wdth,wght", sans-serif;
 }
-/*Картинки*/
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Скрываем слайдер по умолчанию */
-.slider {
-  display: none;
-}
-
-/* Стили для простой картинки */
-.simple-image {
-  width: 100%;
-  height: auto;
-}
 
 
 /*Картинка для телефона*/
